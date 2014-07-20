@@ -1,0 +1,1 @@
+//JSON definition of every fontawesome symbol

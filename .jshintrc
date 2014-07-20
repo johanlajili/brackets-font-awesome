@@ -1,0 +1,13 @@
+{
+	"bitwise": true,
+	"camelcase": true,
+	"strict": true,
+	"undef": true,
+	"indent": 4,
+	"predef": {
+		"define": true,
+		"$": true,
+		"brackets": true,
+		"window": true
+	}
+}

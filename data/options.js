@@ -1,0 +1,1 @@
+// definitions of every font awesome options (2x, spin etc.)
