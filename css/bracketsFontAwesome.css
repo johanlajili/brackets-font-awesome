@@ -25,13 +25,12 @@
 }
 .brackets-font-awesome #font-awesome-search-bar {
 	flex: 1;
-}<
+}
 /*SECOND LEVEL FLEX: Symbols in Symbols (horizontal + wrap)*/
 
 .brackets-font-awesome .symbols {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
 /*SECOND LEVEL FLEX: OPTIONS (vertical)*/
 
@@ -69,9 +68,3 @@
 	left: 7px;
 	top: 5px;	
 }
-.brackets-font-awesome .selected{
-	border: 3px solid red;
-}
-
-
-
