@@ -5,16 +5,18 @@
 	margin-top: 10px;
 }
 .brackets-font-awesome .fluid {
-	height: 180px;
+	height: 250px;
 	display: flex;
 }
 .brackets-font-awesome .symbols-container {
-	flex: 4;
-	height: 160px;
+	flex: 1;
+	height: 100%;
 	overflow-y: scroll;
 }
 .brackets-font-awesome .options {
-	flex: 1;
+	width: 200px;
+	height: 100%;
+	padding: 0px 15px;
 }
 /*SECOND LEVEL FLEX: Symbols in Symbols (horizontal + wrap)*/
 
@@ -22,6 +24,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+/*SECOND LEVEL FLEX: OPTIONS (vertical)*/
+
+.brackets-font-awesome .options {
+	display: flex;
+	flex-direction: column;
+}
+.brackets-font-awesome .options .ok {
+	margin-top: auto;
 }
 /*Aesthetic*/
 
@@ -34,4 +45,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.brackets-font-awesome .options select {
+	width: 200px;
 }
