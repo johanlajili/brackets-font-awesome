@@ -37,12 +37,17 @@ define(function (require, exports, module) {
 	};
 	BracketsFontAwesome.prototype.setupEvents = function(element){
 		var searchBar = element.find("#font-awesome-search-bar");
-		
+		var symbols = element.find(".symbol");
 		searchBar.on("input", function(event){
 			var hiddens = search(arguments[0].currentTarget.value);
 			element.find(".symbol").show();
-			element.find(hiddens).hide();
+			element.find(hiddens).hide().removeClass("selected");
 		});
+		symbols.on("click", function(event){
+			element.find(".selected").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		
 	};
 
 

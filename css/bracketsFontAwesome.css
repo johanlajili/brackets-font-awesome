@@ -57,6 +57,10 @@
 	background: gray;
 	color: white;
 }
+.brackets-font-awesome .symbol.selected {
+	background: rgb(33, 82, 136);
+	color: white;
+}
 .brackets-font-awesome .options select {
 	width: 200px;
 }
