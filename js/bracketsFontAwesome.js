@@ -31,7 +31,7 @@ define(function (require, exports, module) {
 		window.setTimeout(this.sizeEditorToContent.bind(this));
 	};
 	BracketsFontAwesome.prototype.sizeEditorToContent = function () {
-		this.hostEditor.setInlineWidgetHeight(this, 280, true);
+		this.hostEditor.setInlineWidgetHeight(this, 320, true);
 	};
 
 

@@ -1,8 +1,8 @@
 /*FIRST LEVEL OF FLEX: symbols and options (horizontal)*/
 
 .brackets-font-awesome {
-	margin-left: 40px;
-	margin-top: 10px;
+	padding: 10px 10px 10px 40px;
+	position: relative;
 }
 .brackets-font-awesome .fluid {
 	height: 250px;
@@ -18,6 +18,14 @@
 	height: 100%;
 	padding: 0px 15px;
 }
+/*SECOND LEVEL FLEX: Search bar*/
+.brackets-font-awesome .search-bar {
+	display: flex;
+	position: relative;
+}
+.brackets-font-awesome #font-awesome-search-bar {
+	flex: 1;
+}<
 /*SECOND LEVEL FLEX: Symbols in Symbols (horizontal + wrap)*/
 
 .brackets-font-awesome .symbols {
@@ -36,7 +44,7 @@
 }
 /*Aesthetic*/
 
-.symbol {
+.brackets-font-awesome .symbol {
 	width: 40px;
 	height: 40px;
 	background: rgba(255, 255, 255, 0.67);
@@ -46,6 +54,24 @@
 	justify-content: center;
 	align-items: center;
 }
+.brackets-font-awesome .symbol:hover {
+	background: gray;
+	color: white;
+}
 .brackets-font-awesome .options select {
 	width: 200px;
 }
+.brackets-font-awesome #font-awesome-search-bar {
+	padding-left: 25px;
+}
+.brackets-font-awesome .magnifier {
+	position: absolute;
+	left: 7px;
+	top: 5px;	
+}
+.brackets-font-awesome .selected{
+	border: 3px solid red;
+}
+
+
+
