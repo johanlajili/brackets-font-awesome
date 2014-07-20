@@ -8,6 +8,7 @@
 		"define": true,
 		"$": true,
 		"brackets": true,
-		"window": true
+		"window": true,
+		"Mustache": true
 	}
 }

@@ -1,1 +1,37 @@
-/*brackatsFontAwesome css*/
+/*FIRST LEVEL OF FLEX: symbols and options (horizontal)*/
+
+.brackets-font-awesome {
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.brackets-font-awesome .fluid {
+	height: 180px;
+	display: flex;
+}
+.brackets-font-awesome .symbols-container {
+	flex: 4;
+	height: 160px;
+	overflow-y: scroll;
+}
+.brackets-font-awesome .options {
+	flex: 1;
+}
+/*SECOND LEVEL FLEX: Symbols in Symbols (horizontal + wrap)*/
+
+.brackets-font-awesome .symbols {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/*Aesthetic*/
+
+.symbol {
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.67);
+	margin: 2px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

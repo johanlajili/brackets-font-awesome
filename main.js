@@ -1,7 +1,7 @@
 /** Simple extension that adds a "File > Hello World" menu item */
 define(function (require, exports, module) {
 	"use strict";
-	var TRIGGER = "fa";
+	var TRIGGER = "";
 	//External Modules
 	var EditorManager, ExtensionUtils;
 	EditorManager = brackets.getModule("editor/EditorManager");
@@ -22,5 +22,6 @@ define(function (require, exports, module) {
 	}
 
 	ExtensionUtils.loadStyleSheet(module, "css/bracketsFontAwesome.css");
+	ExtensionUtils.loadStyleSheet(module, "assets/font-awesome-4.1.0/css/font-awesome.min.css");
 	EditorManager.registerInlineEditProvider(provider);
 });

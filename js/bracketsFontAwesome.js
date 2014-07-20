@@ -5,6 +5,13 @@ define(function (require, exports, module) {
 	DocumentManager = brackets.getModule("document/DocumentManager");
 	InlineWidget = brackets.getModule("editor/InlineWidget").InlineWidget;
 
+	var templates = {
+		bracketsFontAwesome: require("text!template/bracketsFontAwesome.html")
+	};
+	var datas = {
+		symbols: require("data/symbols")
+	};
+
 	function BracketsFontAwesome() {
 
 		InlineWidget.call(this);
@@ -16,7 +23,7 @@ define(function (require, exports, module) {
 
 	BracketsFontAwesome.prototype.load = function (hostEditor) {
 		BracketsFontAwesome.prototype.parentClass.load.apply(this, arguments);
-		this.$wrapperDiv = $("<div>toto</div>");
+		this.$wrapperDiv = $(updateHtml(computeData()));
 		this.$htmlContent.append(this.$wrapperDiv);
 	};
 	BracketsFontAwesome.prototype.onAdded = function () {
@@ -24,8 +31,17 @@ define(function (require, exports, module) {
 		window.setTimeout(this.sizeEditorToContent.bind(this));
 	};
 	BracketsFontAwesome.prototype.sizeEditorToContent = function () {
-		this.hostEditor.setInlineWidgetHeight(this, this.$wrapperDiv.height() + 20, true);
+		this.hostEditor.setInlineWidgetHeight(this, 220, true);
 	};
+
+
+	function updateHtml(data, filter) {
+		return Mustache.render(templates.bracketsFontAwesome, data);
+	}
+
+	function computeData() {
+		return datas;
+	}
 
 	module.exports = BracketsFontAwesome;
 
